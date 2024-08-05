@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: chartreuse;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Exercicio de Tabela</h1>
     
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -21,6 +64,36 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Renan</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Fátima</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Leiliane</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Administrador</td>
         </tr>
     </table>
 </body>
